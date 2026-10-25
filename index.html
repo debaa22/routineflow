@@ -31,7 +31,7 @@ $('date').onchange=e=>{selected=e.target.value||today();render()};$('today').onc
 </script><script>
 (()=>{
   const $=id=>document.getElementById(id);
-  const config={apiKey:'AIzaSyBiqkV-Upe-D0sQ8H11SRRKWvNbqUx5Mg',authDomain:'routineflow-ded15.firebaseapp.com',projectId:'routineflow-ded15',storageBucket:'routineflow-ded15.firebasestorage.app',messagingSenderId:'509085431040',appId:'1:509085431040:web:bce378ef52af36d8d4efe5',measurementId:'G-DD769NVFPJ'};
+  const config={apiKey:'AIzaSyBiqkvU-0pe-D0sQ8H11SRRKwvNbqUx5Mg',authDomain:'routineflow-ded15.firebaseapp.com',projectId:'routineflow-ded15',storageBucket:'routineflow-ded15.firebasestorage.app',messagingSenderId:'509085431040',appId:'1:509085431040:web:bce378ef52af36d8d4efe5',measurementId:'G-DD769NVFPJ'};
   let auth,firestore,activeUser=null,ready=false,timer=null,applyingCloud=false,unsubscribe=null;
   const originalSet=Storage.prototype.setItem;
   function message(text){$('cloudMessage').textContent=text}
