@@ -62,4 +62,14 @@ $('date').onchange=e=>{selected=e.target.value||today();render()};$('today').onc
     }catch(e){ready=false;status('Sync error');message('Cloud sync failed: '+e.message+' Confirm the Firestore rules allow users to access their own data.')}
   });
 })();
-</script></body></html>
+</script>
+<script>
+(() => {
+  const url = new URL(window.location.href);
+  if (url.searchParams.has('utm_source')) {
+    url.searchParams.delete('utm_source');
+    history.replaceState(null, '', url.pathname + url.search + url.hash);
+  }
+})();
+</script>
+</body></html>
